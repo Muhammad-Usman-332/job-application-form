@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job application form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>💼 Job Application</h1>
+    <form method="post" action="https://formspree.io/f/xeogawbl">
+        <!-- name -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <!-- email -->
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <!-- position applying for -->
+        <label for="position">Position Applying For:</label><br>
+        <select name="position" id="position">
+            <option value="">--please choose</option>
+            <option value="Frontend">Frontend Developer</option>
+            <option value="backend">Backend Developer</option>
+            <option value="designer">UI/UX Developer</option>
+            <option value="marketing">Digital Marketing</option>
+        </select><br><br>
+
+        <!-- Upload Resume (PDF) -->
+        <label for="resume">Upload Resume (PDF):</label><br>
+        <input type="file" name="resume" id="resume" accept=".pdf"><br><br>
+
+        <!-- cover letter -->
+        <label for="cover">Cover Letter:</label><br>
+        <textarea name="cover" id="cover" rows="5" cols="30" placeholder="Write your cover letter here..."></textarea><br><br>
+
+        <!-- term -->
+        <input type="checkbox" name="term" id="term">
+        <label for="term">I confirm that the information provided is accurate.</label><br><br>
+
+        <!-- submit -->
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
